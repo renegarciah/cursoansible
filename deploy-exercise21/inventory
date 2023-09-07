@@ -2,7 +2,8 @@
 localhost
 
 [intranetweb]
-node1.example.com
+vm-1-node1-ansible
+vm-1-node2-ansible
 
 [everyone:children]
 myself
