@@ -1,0 +1,6 @@
+[dbservers]
+vm-1-control-ansible
+vm-1-node1-ansible
+
+[webservers]
+vm-1-node2-ansible
