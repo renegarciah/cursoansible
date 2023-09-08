@@ -1,0 +1,47 @@
+---
+- name: Enable intranet services
+  hosts: intranet
+  become: yes
+  tasks:
+    - name: latest version of httpd and firewalld installed
+      ansible.builtin.yum:
+        name:
+          - httpd
+          - firewalld
+        state: latest
+
+    - name: firewalld enabled and running
+      ansible.builtin.service:
+        name: firewalld
+        enabled: true
+        state: started
+
+    - name: firewalld permits http service
+      ansible.posix.firewalld:
+        service: http
+        permanent: true
+        state: enabled
+        immediate: yes
+
+    - name: httpd enabled and running
+      ansible.builtin.service:
+        name: httpd
+        enabled: true
+        state: started
+
+    - name: test html page is installed
+      ansible.builtin.copy:
+        content: "Welcome to the example.com intranet!\n"
+        dest: /var/www/html/index.html
+
+- name: Test intranet web server
+  hosts: localhost
+  gather_facts: no
+  become: no
+  tasks:
+    - name: connect to intranet web server
+      ansible.builtin.uri:
+        url: http://vm-1-node2-ansible
+        status_code: 200
+
+
