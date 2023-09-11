@@ -1,0 +1,13 @@
+---
+- name: webservers
+  hosts: webserver
+  vars:
+    web_pkg: httpd
+    firewall_pkg: firewalld
+    web_service: httpd
+    firewall_service: firewalld
+    python_pkg: wget
+    rule: http
+  become: yes
+  tasks:
+
