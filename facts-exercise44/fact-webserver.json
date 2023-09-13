@@ -33,17 +33,17 @@ vm-1-node1-ansible | SUCCESS => {
         "ansible_date_time": {
             "date": "2023-09-13",
             "day": "13",
-            "epoch": "1694643461",
-            "epoch_int": "1694643461",
+            "epoch": "1694644859",
+            "epoch_int": "1694644859",
             "hour": "17",
-            "iso8601": "2023-09-13T22:17:41Z",
-            "iso8601_basic": "20230913T171741694275",
-            "iso8601_basic_short": "20230913T171741",
-            "iso8601_micro": "2023-09-13T22:17:41.694275Z",
-            "minute": "17",
+            "iso8601": "2023-09-13T22:40:59Z",
+            "iso8601_basic": "20230913T174059106134",
+            "iso8601_basic_short": "20230913T174059",
+            "iso8601_micro": "2023-09-13T22:40:59.106134Z",
+            "minute": "40",
             "month": "09",
-            "second": "41",
-            "time": "17:17:41",
+            "second": "59",
+            "time": "17:40:59",
             "tz": "CDT",
             "tz_dst": "CDT",
             "tz_offset": "-0500",
@@ -262,13 +262,13 @@ vm-1-node1-ansible | SUCCESS => {
             "SELINUX_USE_CURRENT_RANGE": "",
             "SHELL": "/bin/bash",
             "SHLVL": "2",
-            "SSH_CLIENT": "192.168.122.227 55332 22",
-            "SSH_CONNECTION": "192.168.122.227 55332 192.168.122.190 22",
+            "SSH_CLIENT": "192.168.122.227 55344 22",
+            "SSH_CONNECTION": "192.168.122.227 55344 192.168.122.190 22",
             "SSH_TTY": "/dev/pts/0",
             "TERM": "xterm",
             "USER": "student",
             "XDG_RUNTIME_DIR": "/run/user/1000",
-            "XDG_SESSION_ID": "54",
+            "XDG_SESSION_ID": "58",
             "_": "/usr/libexec/platform-python"
         },
         "ansible_eth0": {
@@ -462,7 +462,15 @@ vm-1-node1-ansible | SUCCESS => {
             "1m": 0.0,
             "5m": 0.0
         },
-        "ansible_local": {},
+        "ansible_local": {
+            "custom": {
+                "general": {
+                    "package": "httpd",
+                    "service": "httpd",
+                    "state": "started"
+                }
+            }
+        },
         "ansible_lsb": {},
         "ansible_lvm": "N/A",
         "ansible_machine": "x86_64",
@@ -488,18 +496,18 @@ vm-1-node1-ansible | SUCCESS => {
         "ansible_memtotal_mb": 1817,
         "ansible_mounts": [
             {
-                "block_available": 1997196,
+                "block_available": 1997189,
                 "block_size": 4096,
                 "block_total": 2592763,
-                "block_used": 595567,
+                "block_used": 595574,
                 "device": "/dev/vda3",
                 "fstype": "xfs",
-                "inode_available": 5145336,
+                "inode_available": 5145333,
                 "inode_total": 5190592,
-                "inode_used": 45256,
+                "inode_used": 45259,
                 "mount": "/",
                 "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
-                "size_available": 8180514816,
+                "size_available": 8180486144,
                 "size_total": 10619957248,
                 "uuid": "d47ead13-ec24-428e-9175-46aefa764b26"
             },
@@ -596,7 +604,7 @@ vm-1-node1-ansible | SUCCESS => {
         ],
         "ansible_system_capabilities_enforced": "True",
         "ansible_system_vendor": "Red Hat",
-        "ansible_uptime_seconds": 1220077,
+        "ansible_uptime_seconds": 1221475,
         "ansible_user_dir": "/home/student",
         "ansible_user_gecos": "",
         "ansible_user_gid": 1000,
@@ -656,17 +664,17 @@ vm-1-node2-ansible | SUCCESS => {
         "ansible_date_time": {
             "date": "2023-09-13",
             "day": "13",
-            "epoch": "1694643461",
-            "epoch_int": "1694643461",
+            "epoch": "1694644859",
+            "epoch_int": "1694644859",
             "hour": "17",
-            "iso8601": "2023-09-13T22:17:41Z",
-            "iso8601_basic": "20230913T171741681887",
-            "iso8601_basic_short": "20230913T171741",
-            "iso8601_micro": "2023-09-13T22:17:41.681887Z",
-            "minute": "17",
+            "iso8601": "2023-09-13T22:40:59Z",
+            "iso8601_basic": "20230913T174059152287",
+            "iso8601_basic_short": "20230913T174059",
+            "iso8601_micro": "2023-09-13T22:40:59.152287Z",
+            "minute": "40",
             "month": "09",
-            "second": "41",
-            "time": "17:17:41",
+            "second": "59",
+            "time": "17:40:59",
             "tz": "CDT",
             "tz_dst": "CDT",
             "tz_offset": "-0500",
@@ -885,13 +893,13 @@ vm-1-node2-ansible | SUCCESS => {
             "SELINUX_USE_CURRENT_RANGE": "",
             "SHELL": "/bin/bash",
             "SHLVL": "2",
-            "SSH_CLIENT": "192.168.122.227 60490 22",
-            "SSH_CONNECTION": "192.168.122.227 60490 192.168.122.12 22",
+            "SSH_CLIENT": "192.168.122.227 60502 22",
+            "SSH_CONNECTION": "192.168.122.227 60502 192.168.122.12 22",
             "SSH_TTY": "/dev/pts/0",
             "TERM": "xterm",
             "USER": "student",
             "XDG_RUNTIME_DIR": "/run/user/1000",
-            "XDG_SESSION_ID": "48",
+            "XDG_SESSION_ID": "52",
             "_": "/usr/libexec/platform-python"
         },
         "ansible_eth0": {
@@ -989,8 +997,8 @@ vm-1-node2-ansible | SUCCESS => {
         "ansible_hostname": "vm-1-node2-ansible",
         "ansible_hostnqn": "",
         "ansible_interfaces": [
-            "eth0",
-            "lo"
+            "lo",
+            "eth0"
         ],
         "ansible_is_chroot": false,
         "ansible_iscsi_iqn": "",
@@ -1085,7 +1093,15 @@ vm-1-node2-ansible | SUCCESS => {
             "1m": 0.0,
             "5m": 0.0
         },
-        "ansible_local": {},
+        "ansible_local": {
+            "custom": {
+                "general": {
+                    "package": "httpd",
+                    "service": "httpd",
+                    "state": "started"
+                }
+            }
+        },
         "ansible_lsb": {},
         "ansible_lvm": "N/A",
         "ansible_machine": "x86_64",
@@ -1093,8 +1109,8 @@ vm-1-node2-ansible | SUCCESS => {
         "ansible_memfree_mb": 576,
         "ansible_memory_mb": {
             "nocache": {
-                "free": 1510,
-                "used": 307
+                "free": 1511,
+                "used": 306
             },
             "real": {
                 "free": 576,
@@ -1111,18 +1127,18 @@ vm-1-node2-ansible | SUCCESS => {
         "ansible_memtotal_mb": 1817,
         "ansible_mounts": [
             {
-                "block_available": 1997004,
+                "block_available": 1996974,
                 "block_size": 4096,
                 "block_total": 2592763,
-                "block_used": 595759,
+                "block_used": 595789,
                 "device": "/dev/vda3",
                 "fstype": "xfs",
-                "inode_available": 5145224,
+                "inode_available": 5145221,
                 "inode_total": 5190592,
-                "inode_used": 45368,
+                "inode_used": 45371,
                 "mount": "/",
                 "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
-                "size_available": 8179728384,
+                "size_available": 8179605504,
                 "size_total": 10619957248,
                 "uuid": "d47ead13-ec24-428e-9175-46aefa764b26"
             },
@@ -1219,7 +1235,7 @@ vm-1-node2-ansible | SUCCESS => {
         ],
         "ansible_system_capabilities_enforced": "True",
         "ansible_system_vendor": "Red Hat",
-        "ansible_uptime_seconds": 1032212,
+        "ansible_uptime_seconds": 1033610,
         "ansible_user_dir": "/home/student",
         "ansible_user_gecos": "",
         "ansible_user_gid": 1000,
