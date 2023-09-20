@@ -1,3 +1,2 @@
 [webservers]
-servera.lab.example.com
-
+vm-1-node1-ansible
